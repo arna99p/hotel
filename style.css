@@ -1,0 +1,742 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+/*Utilits*/
+:root{
+    --text-XL:4rem;
+    --text-Xl:5rem;
+    --text-M:4rem;
+    --tex-s:1rem;
+    --red:#8B1E0F;
+    --black:#000000;
+    --white:#FFFFFF;
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: Georgia;
+    src: url(/res/fonts/Georgia/GeorgiaPro-Bold.ttf);
+  }
+  @font-face {
+    font-family: Georgia-i;
+    src: url(/res/fonts/Georgia/GeorgiaPro-Italic.ttf);
+  }
+.big-heading{
+    font-size:var(--text-Xl);
+    font-family: Georgia;
+    font-weight:5000px;
+}
+.lead2{
+    font-size:1.5rem;
+}
+.text-s{
+ font-size:var(--tex-s);
+}
+#slider{
+    position: relative;
+    padding:3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#slider::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.heading{
+    position: relative;
+    padding:0.2rem 0 0.2rem 0;
+    margin:0.2rem 0 1rem 0;
+    line-height:5rem;
+    text-align: center;
+    color: var(--red);
+}
+.heading2{
+    font-size:3rem;
+    line-height:3rem;
+   font-family:Georgia;
+   color: var(--red);
+   padding:1rem 0rem 0rem 2.5rem;
+   margin:1rem 0rem 2rem 0rem;
+   ;
+}
+.tagline{
+    position: relative;
+    padding:0.2rem 0 0.2rem 0;
+    margin:0.2rem 0 2.2rem 0;
+   font-family: Georgia-i;
+    text-align: center;
+   
+}
+.tagline2{
+    position: relative;
+    margin:2.5rem 0 0.1rem 0;
+    text-align: center;
+    font-family: Georgia-i;
+
+}
+
+.btn-text{
+    color: var(--red);
+    font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+/* CSS */
+.btn1 {
+  background-color:white;
+  border: 1px solid white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 12px 35px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+}
+
+.btn1:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.2) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.btn1:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+}
+
+.btn1:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+#slider{
+    background: url(/res/img/mountain1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#about{
+    display: flex;
+}
+.artical-box2{
+    padding:1rem 5rem 1rem 3rem;
+background: #FFDCA1;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+ 
+    border: 1px solid black;
+}
+.left{
+    border: 1px solid black;
+    display: flex;
+    margin-left:3rem;
+    padding:2rem;
+}
+.left img{
+    display: block;
+    width:450px;
+    height:500px;
+}
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+
+}
+@font-face {
+  font-family: GeorgiaPro;
+  src: url(/res/GeorgiaPro-CondBold.ttf);
+}
+
+@font-face {
+  font-family: GeorgiaPro-Regular;
+  src: url(/res/GeorgiaPro-CondRegular.ttf);
+}
+
+
+
+#about{
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F4F2D7;
+}
+
+#text-section{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding:5rem;
+  margin-right: 4rem;
+}
+
+.text-box-p{
+  margin-top:2rem;
+  background: #FFDCA1;
+}
+.text-box-h{
+  max-width:25rem;
+}
+.text-box-h h2{
+  font-size:60px;
+  font-style: GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  font-family: unset;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  line-height:2.5rem;
+  color: #8B1E0F;
+}
+.text-box-p p{
+  padding:2rem;
+  font-family: GeorgiaPro-Regular;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  font-family: unset;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+ color: #8B1E0F;
+}
+
+.img-section img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.human-model{
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+}
+
+
+#Accommodations {
+  padding: 0;
+  margin: 0;
+  background: #F6F1C6;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+#Accommodations .Accommodations-heading{
+  position: relative;
+}
+#Accommodations .Accommodations-heading h2{
+  font-size: 60px;
+
+}
+#Accommodations .Accommodations-heading::after{
+ content: " ";
+width:15rem;
+height:0.2rem;
+background:#8B1E0F;
+position: absolute;
+left:6rem;
+
+}
+.key{
+  translate: 10px 60px;
+}
+
+.Accommodations-box-continer{
+  margin-top:2rem;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.box{
+ margin:0.2rem;
+  width: 330px;
+  height: 150px;
+  border: 1px solid black;
+}
+
+.box2{
+  background: url(/res/img/room.jpg) no-repeat left center ; 
+  background-size: cover;
+  object-fit: contain;
+  border: none;
+}
+
+.box4{
+  background: url(/res/img/room3.jpg) no-repeat left center ; 
+  background-size: cover;
+  object-fit: contain;
+  border: none;
+
+}
+.box5{
+  background: #FFDCA1;
+}
+.box6{
+  background: url(/res/img/room2.jpg) no-repeat left center ; 
+  background-size: cover;
+  object-fit: contain;
+  border: none;
+
+}
+
+.Accommodations-font1{
+  font-family: GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  line-height:1.2rem;
+  color: #8B1E0F;
+  text-align: center;
+}
+.Accommodations-font2{
+  font-family: Georgia-i;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  line-height:1.2rem;
+  color: #8B1E0F;
+  text-align: center;
+  padding-top:20px;
+}
+.room-icon{
+  
+  translate: -5px 20px;
+  display: inline-block;
+  width:10%;
+}
+
+#Facilities{
+display: flex;
+flex-direction: column;
+background: #F6F2CD;
+
+}
+
+
+.Facilities-heading{
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.Facilities-heading-text{
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+  font-size:2.5rem;
+  font-style: GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  font-family: unset;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  line-height:2.5rem;
+  color: #8B1E0F;
+}
+.Facilities-iteam{
+  display: flex;
+  justify-content: center;
+}
+.Facilities-iteam ul{
+  list-style: none;
+  
+  
+}
+.Facilities-iteam ul li{
+ padding:1.5rem;
+ 
+}
+
+.icon{
+  width:35px;
+  translate:-5px 0.5rem;
+}
+.Facilities-text-p{
+ 
+ 
+  font-size:1rem;
+  font-family:GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  line-height:2.5rem;
+  color: #8B1E0F;
+}
+.br-p{
+  line-height:1.4rem;
+}
+
+
+#Feedbacks{
+
+  display:flex;
+  flex-direction: column;
+ align-items: center;
+ background: url(/res/img/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.Feedbacks-heading{
+  display: flex;
+  justify-content: center;
+  padding-top:5rem;
+
+}
+.feedback-text{
+  max-width:100%;
+  display: flex;
+  justify-content:space-around;
+}
+
+.feedback-text-p{
+padding-left:0.8rem;
+padding-right:1rem;
+  padding-top:2rem;
+  padding-bottom:2.5rem;
+  font-size:1rem;
+  font-family: GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  line-height:1.2rem;
+  color: #8B1E0F;
+}
+.quation-icon{
+  width:25px;
+}
+.dash{
+ width:10px;
+ height:2px;
+ margin:2px;
+ margin-bottom:1rem;
+ background: #8B1E0F;
+}
+.Feedbacks-heading-h{
+
+  font-size:60px;
+  font-family: GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  font-family: unset;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  line-height:2.5rem;
+  color: #8B1E0F;
+  padding:2rem;
+}
+
+
+.feedback-text-p2{
+
+  font-size:0.8rem;
+  font-family: GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  line-height:1.8rem;
+  color: #8B1E0F;
+}
+
+#contact-us{
+  background-color:  #8B1E0F !important;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-top:8rem;
+padding-bottom:8rem;
+
+
+}
+.contact-us-heading{
+  display: flex;
+flex-direction: column;
+align-items: center;
+color:var(--white);
+padding-bottom:2rem;
+}
+.contact-us-heading-h{
+ font-size:3rem;
+   line-height:0.1rem;
+   font-family:Georgia;
+   color: white;
+  padding-top:4rem;
+ 
+}
+.line{
+  width:18rem;
+  height:5px;
+  background: var(--white);
+  margin-top:2rem;
+  margin-bottom:2rem;
+  color:var(--white);
+
+}
+.contact-us-container{
+display: flex;
+justify-content: space-around;
+}
+.address{
+  padding: 5rem;
+border:1px solid white;
+}
+.address-h{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  font-family: unset;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  color: white;
+}
+.address-icon{
+  display: inline;
+  width:50px;
+  translate: -5px 20px;
+}
+.address p{
+  text-align: center;
+  font-family: GeorgiaPro;
+  font-synthesis: none;
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "kern" 0, "calt" 0, "liga" 0, "clig" 0, "dlig" 0, "hlig" 0;
+  font-family: unset;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: geometricprecision;
+  white-space: normal;
+  color: white;
+}
+.form{
+  position: relative;
+  padding:2rem;
+
+}
+
+input{
+  border-radius:5px;
+  border-style: none;
+}
+input:focus {
+  border-style: none;
+  box-shadow: none;
+}
+input::placeholder {
+ padding:5px;
+  font-family: Georgia-i;
+  color: #8B1E0F;
+  font-size:16px;
+}
+#submit{
+  padding-top:0.1rem;
+  padding-bottom:0.1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  cursor: pointer;
+  position: absolute;
+  right:2rem;
+  font-family: Georgia-i;
+
+}
+@media screen and (max-width: 800px) {
+  #about {
+    background-color: lightgreen;
+    flex-direction: column-reverse;
+   margin: 0;
+  }
+  .text-box-h {
+     padding:0;
+     margin: 0;
+     padding-top:2rem;
+  }
+  #text-section{
+      margin: 0;
+      padding: 0;
+     
+  }
+  .text-box-p{
+      
+      padding: 1rem;
+  }
+  .human-model{
+      display: block;
+      position: absolute;
+      right: -2rem;
+      bottom: -2rem;
+  }
+  #Accommodations{
+      flex-direction: column;
+     
+      justify-content: center;
+     
+      align-items: center;
+  }
+  #Accommodations .Accommodations-heading::after{
+      display: none;
+  }
+  #Accommodations .Accommodations-heading h2{
+      text-align: center;
+      font-size:1rem;
+
+  }
+  .key{
+      translate: 0rem 0px;
+      width:1rem;
+  }
+  .Facilities-iteam{
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content:center;
+  }
+  .feedback-text{
+    flex-direction: column;
+  }
+  .contact-us-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  #submit{
+    position: static;
+    margin: 0 auto;
+
+  }
+  .contact-us-heading-h{
+    font-size:2rem;
+  }
+  .big-heading{
+    font-size: 2.5rem;
+    line-height:2.5rem;
+  }
+  .text-box-h h2{
+    font-size: 1rem;
+    line-height:3.5rem;
+  }
+  .Facilities-heading-text{
+    font-size:1.5rem;
+
+
+  }
+  .contact-us-heading-h{
+    font-size:1.5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
+  }
+  .line{
+    width:10rem;
+  }
+  .feedback-text-p{
+    font-size: 0.8rem;
+  }
+  .address{
+    padding:2rem;
+  }
+  .text-box-h h2{
+    display: none;
+  }
+  .tagline2{
+
+    font-size:1rem;
+  }
+  .Accommodations-heading h2{
+    padding-top:2rem;
+  }
+    .Feedbacks-heading-h{
+        font-size:1.5rem;
+}
