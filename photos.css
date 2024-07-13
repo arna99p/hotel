@@ -1,0 +1,71 @@
+/* Styles for lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow:hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .lightbox-image {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+   max-height: 90%;
+  }
+  
+  .close {
+    color: #fff;
+    font-size: 3em;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+  }
+  
+  
+  
+  
+  /* demo styles */
+  
+  .gallery {
+    width: 90vw;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+    padding-top: 90px;
+  }
+  
+  .gallery img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  .gallery img:hover {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  
+  h2 {
+    
+    margin:0;
+     font-size: calc(18px + 2vw); /* FOnt size 18px + 2vw for responsiveness */
+  }
+  
+  body {
+    padding-top:50px;
+    text-align:center;
+    padding-bottom:60vh;
+    
+  }
+  
